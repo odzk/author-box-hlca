@@ -24,7 +24,7 @@ ul  {
 <div class="row" style="background: #f2f2f2; padding-top: 30px; padding-bottom:30px; border-top: 3px solid #45caf9">
 	<div class="col-md-5 col-xs-12 text-center">
 		<img src="<?php echo get_avatar_url( get_the_author_meta( 'ID' )); ?>" style="border-radius: 100%; vertical-align: middle;">
-		<a href="/author/<?php echo get_the_author_meta('user_nicename'); ?>" style="margin-left: 10px;"><?php echo the_author(); ?></a>
+		<a href="/author/<?php echo get_the_author_meta('user_nicename'); ?>" style="margin-left: 10px;"><?php echo get_the_author_meta('display_name'); ?></a>
 	</div>
 	<div class="col-md-7 col-xs-12" style="padding-top: 10px;">
 	<?php echo get_the_author_meta('description'); ?>"
